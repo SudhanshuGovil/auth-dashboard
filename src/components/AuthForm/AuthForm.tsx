@@ -24,12 +24,13 @@ const AuthForm = ({ handleSubmit, isLogIn = true }: AuthFormProps) => {
 
   const handleNavigation = () => navigate(isLogIn ? "/signup" : "/");
 
-  const onSubmitClick = () => {
+  const onSubmitClick = (e: any) => {
+    e.preventDefault();
     handleSubmit(fields);
     setFields({ email: "", password: "" });
   };
 
-  const isDisabled = !Boolean(fields.email && fields.password);
+  const isDisabled = !(fields.email && fields.password);
 
   return (
     <div className="bg-white p-5 mx-auto border border-white rounded-xl lg:w-1/3">
@@ -38,8 +39,9 @@ const AuthForm = ({ handleSubmit, isLogIn = true }: AuthFormProps) => {
       </div>
       <form className="mt-8">
         <div className="flex flex-col gap-1 mb-4">
-          <label id="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
+            id="email"
             name="email"
             type="text"
             placeholder="Type your email"
@@ -48,8 +50,9 @@ const AuthForm = ({ handleSubmit, isLogIn = true }: AuthFormProps) => {
           />
         </div>
         <div className="flex flex-col gap-1 mb-8">
-          <label id="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input
+            id="password"
             name="password"
             type="password"
             placeholder="Type your password"
@@ -59,7 +62,7 @@ const AuthForm = ({ handleSubmit, isLogIn = true }: AuthFormProps) => {
         </div>
         <div className="flex justify-center items-center">
           <button
-            type="button"
+            type="submit"
             onClick={onSubmitClick}
             disabled={isDisabled}
             className={classNames(
