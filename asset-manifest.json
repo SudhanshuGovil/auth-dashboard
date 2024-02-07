@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/SudhanshuGovil/auth-dashboard/static/css/main.6bb9a73b.css",
-    "main.js": "/SudhanshuGovil/auth-dashboard/static/js/main.f5f52062.js",
-    "static/js/592.d9349c5b.chunk.js": "/SudhanshuGovil/auth-dashboard/static/js/592.d9349c5b.chunk.js",
-    "index.html": "/SudhanshuGovil/auth-dashboard/index.html",
-    "main.6bb9a73b.css.map": "/SudhanshuGovil/auth-dashboard/static/css/main.6bb9a73b.css.map",
-    "main.f5f52062.js.map": "/SudhanshuGovil/auth-dashboard/static/js/main.f5f52062.js.map",
-    "592.d9349c5b.chunk.js.map": "/SudhanshuGovil/auth-dashboard/static/js/592.d9349c5b.chunk.js.map"
+    "main.css": "/auth-dashboard/static/css/main.6bb9a73b.css",
+    "main.js": "/auth-dashboard/static/js/main.de8bc0e8.js",
+    "static/js/592.d9349c5b.chunk.js": "/auth-dashboard/static/js/592.d9349c5b.chunk.js",
+    "index.html": "/auth-dashboard/index.html",
+    "main.6bb9a73b.css.map": "/auth-dashboard/static/css/main.6bb9a73b.css.map",
+    "main.de8bc0e8.js.map": "/auth-dashboard/static/js/main.de8bc0e8.js.map",
+    "592.d9349c5b.chunk.js.map": "/auth-dashboard/static/js/592.d9349c5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6bb9a73b.css",
-    "static/js/main.f5f52062.js"
+    "static/js/main.de8bc0e8.js"
   ]
 }
